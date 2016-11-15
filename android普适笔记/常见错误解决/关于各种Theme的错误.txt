@@ -1,0 +1,4 @@
+1.没有Theme.AppCompat.Light.NoActionBar   
+解决： 引入
+   <style name="Theme.AppCompat.Light.NoActionBar" parent="@style/Theme.AppCompat.Light">  
+        <item name="android:windowNoTitle">true</item>  

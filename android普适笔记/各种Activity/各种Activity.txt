@@ -1,0 +1,10 @@
+1.eclipse新建4.0项目，默认继承的Activity,主界面顶端会出现ActionBar(标题栏)。
+
+2.AS 中新建4.0项目继承ActionBarActivity，并且ActionBarActivity已经过时。若在AS 中继承Activity，默认界面是没有ActionBar的。
+
+3.如果要在AS中也使用ActionBar，并且不使用已经的过时的ActionBarActivity，有什么办法呢？就是使用AppCompatActivity.在AS中把MainActivity继承自AppCompatActivity，并导入对应的包。
+
+AppCompatActivity是为了取代ActionBarActivity的。
+
+在API22之前我们使用标题栏基本都是在ActionBarActivity的Activity中处理的，而API22之后，谷歌遗弃了ActionBarActivity，推荐我们也可以说是强制我们使用AppCompatActivity。
+

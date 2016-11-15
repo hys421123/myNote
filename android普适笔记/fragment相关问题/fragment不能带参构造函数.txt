@@ -1,0 +1,32 @@
+解决新建fragment类不能带参构造函数的问题。
+
+You shouldn't really be overriding the constructor anyway. You should have a newInstance() static method defined and pass any parameters via arguments (bundle)
+
+For example:
+
+在Fragment类中
+public static final AlertFragment newInstance(int title, String message)
+{
+    AlertFragment f = new AlertFragment();
+    Bundle bdl = new Bundle(2);
+    bdl.putInt(EXTRA_TITLE, title);
+    bdl.putString(EXTRA_MESSAGE, message);
+    f.setArguments(bdl);
+    return f;
+}
+
+@Override
+public void onCreate(Bundle savedInstanceState)
+{
+    title = getArguments().getInt(EXTRA_TITLE);
+    message = getArguments().getString(EXTRA_MESSAGE);
+
+    //...
+    //etc
+    //...
+}
+
+在相关的Activity中；
+public onCreate(Bundle savedInstanceState) {
+	AlertFragment frm=AlertFragment.newInstance("hehe");
+}

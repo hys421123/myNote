@@ -1,0 +1,2 @@
+在fragment相关问题中，  fragment不能带参构造函数中有提及部分。
+目前的bundle是在fragment的newInstance中出现，并不是在activity中出现。

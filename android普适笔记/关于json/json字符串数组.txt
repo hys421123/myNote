@@ -1,0 +1,8 @@
+{"arr":["ipAddr","installationSite","imineSystemId","valid"],"login":0,"password":"","purview":"","userId":0,"userName":""}
+其中 ["ipAddr","installationSite","imineSystemId","valid"]表示的是arr的数组。
+
+
+{"steps":[{"img":"http:\/\/juheimg.oss-cn-hangzhou.aliyuncs.com\/cookbook\/s\/1\/45_0824e37faf00b71e.jpg","step":"1.将五花肉煮至断生状态"}]}
+表示的是json对象中的steps jsonArray。
+
+注意两者的区别

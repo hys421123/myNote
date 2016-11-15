@@ -1,0 +1,27 @@
+xml当中的xmlns：....  就相当于java代码中的import相应的包。
+引用第三方空间，改为res-auto.   xmlns:app="..."
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+          <android.support.v7.widget.Toolbar
+        	 ...
+        	app:navigationIcon="@drawable/ic_back2"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:theme="@style/AppTheme"
+		(引用自己定义的属性)
+
+                >
+
+步骤：
+1.设计所需属性
+attrs.xml文件配置
+<declare-styleable  name="Topbar">
+    <attr name="myPubTitle" format="string"/>
+	.....
+</declare-styleable>
+
+2.实现自己的view
+写好要实现的view.xml的布局
+public class Toolbar extends RelativeLayout
+
+3.在xml中引用自己的view
+

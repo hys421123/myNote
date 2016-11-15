@@ -1,0 +1,3 @@
+imageview.setImageURI(..)
+
+Uri是一个本地图片路径，无法显示网络图片的

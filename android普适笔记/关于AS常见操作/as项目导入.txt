@@ -1,0 +1,5 @@
+1.Master×Ü°üµÄbuild.gradle
+classpath 'com.android.tools.build:gradle:2.1.0'
+
+2.Master\gradle\wrapper\gradle-wrapper.properties
+gradle-2.10-all.zip

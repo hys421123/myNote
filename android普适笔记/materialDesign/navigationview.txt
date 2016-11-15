@@ -1,0 +1,28 @@
+在Material Design中，Navigation drawer导航抽屉，被设计用于应用导航，提供了一种通用的导航方式，体现了设计的一致性。
+
+而NavigationView的典型用途就是配合之前v4包的DrawerLayout，作为其中的Drawer部分，即导航菜单的本体部分。
+典型的布局文件如下，外层是DrawerLayout，它的第一个child将作为content，第二个child作为Drawer。
+content是正文的内容，Drawer是侧滑栏的内容。
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!-- Content -->
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+   <!-- Drawer -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>
+注意其中NavigationView的两个自定义属性
+app:headerLayout接收一个layout，作为导航菜单顶部的Header，可选项。
+app:menu接收一个menu，作为导航菜单的菜单项，几乎是必选项，不然这个控件就失去意义了。但也可以在运行时动态改变menu属性。

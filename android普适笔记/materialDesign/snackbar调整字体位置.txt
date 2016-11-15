@@ -1,0 +1,6 @@
+        Snackbar snack = Snackbar.make(v, "hello_world2", Snackbar.LENGTH_LONG);
+        View view = snack.getView();
+        TextView tv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
+        tv.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        snack.show();
+调整到中间对齐

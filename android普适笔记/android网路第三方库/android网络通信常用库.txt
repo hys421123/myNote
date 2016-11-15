@@ -1,0 +1,30 @@
+Volley
+
+Google出品的一个简化网络任务的库，负责处理请求、加载、缓存、线程、异步等等操作，能处理JSON格式的数据，图片，缓存，纯文字,允许开发者实现一些自定制服务，适合进行  数据量不大，但通信频繁的  网络操作，使用时最好再进行简单的封装。
+源码
+非官方库.
+
+
+
+OKhttp3
+
+Square出品的一个高效的HTTP客户端，android 4.4以后已替换掉HttpURLConnection作为默认的HTTP连接,OkHttp 3.x相对于2.x，在api和使用规范上有一些调整。
+官网
+源码
+wiki
+
+
+
+Gson
+
+Google开发的用于转换Java对象和Json对象的java库
+
+
+
+Jackson
+
+在处理json大文件时解析性能明显优于Gson，如果应用经常需要传输较大的json文件则使用Jackson,小文件则使用Gson。还有阿里的fastjson也有其优势，没用过，后面再说= =
+Wiki
+
+
+http://www.jianshu.com/p/b022eed6b427

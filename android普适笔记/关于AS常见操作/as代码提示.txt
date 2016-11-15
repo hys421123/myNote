@@ -1,0 +1,2 @@
+那在Android Studio中把代码提示换成什么名字了呢，换成了Class Name Completion，快捷键是Ctrl+Alt+Space（空格键）。
+

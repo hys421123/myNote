@@ -1,0 +1,15 @@
+gson解析相关对象时，不仅要注意对象的一一对应，且大对象中的小对象也要解析出来，  然后再填充到大对象之中去。
+
+//解析realtime json对象							
+JSONObjectjsonRealTime=jsonData.getJSONObject("realtime");
+realTimeBean=gson.fromJson(jsonRealTime.toString),RealTimeBean.class);
+
+//解析realWind 和   realWeather
+JSONObject jsonWind=jsonRealTime.getJSONObject("wind");
+RealWindBean realWindBean=gson.fromJson(jsonWind.toString(), RealWindBean.class);
+JSONObject jsonWeather=jsonRealTime.getJSONObject("weather");
+RealWeatherBean realWeatherBean=gson.fromJson(jsonWeather.toString(),RealWeatherBean.class);
+								
+//填充realtimeBean
+realTimeBean.setRealWindBean(realWindBean);
+realTimeBean.setRealWeatherBean(realWeatherBean);

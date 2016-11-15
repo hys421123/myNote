@@ -1,0 +1,25 @@
+edittext
+1.光标cursor颜色
+   <!--android:textCursorDrawable="@drawable/color_cursor"-->
+其中color_cursor.xml为
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <size android:width="3dp" />
+    <solid android:color="@android:color/holo_green_light"  />
+</shape>
+
+2.bottom_line颜色
+在app的主题Theme文件中
+<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+	//常态颜色
+        <item name="colorControlNormal">@android:color/holo_red_dark</item>
+	//获取焦点打字的颜色
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+
+    </style>
+但是如此一来，系统所有的edittext默认设置成这种颜色。
+修正：
+在需要改色的activity里设置AppTheme2,在这个Theme里面设置颜色即可
+  <activity android:name=".BtnActivity" android:theme="@style/AppTheme2"/>

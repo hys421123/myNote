@@ -1,0 +1,10 @@
+1.在一直项目中新建某库项目，
+new->module->选择Android Library->Application name为已有项目名，
+而Module name为SlidingMenu-library(例)
+
+2.删除新建项目中的main文件夹中所有文件及文件夹，
+包括java、res文件夹，AndroidMainfest.xml文件。
+
+3.把要导入库的三个对应文件或文件夹复制粘贴到新建的main下。
+
+4.最后给项目添加依赖库即可。

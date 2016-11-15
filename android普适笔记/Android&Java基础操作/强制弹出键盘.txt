@@ -1,0 +1,4 @@
+     et_comment.setFocusable(true);
+        et_comment.requestFocus();
+        InputMethodManager inputManager = (InputMethodManager)et_comment.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.showSoftInput(et_comment, 0);

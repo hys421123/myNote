@@ -1,0 +1,1 @@
+在DirectionalViewPager中，从第一个fragment0切换到frm1时，没有任何destroy、onPause,到第三个frm2时，第一个frm0开始destroy、onPause.

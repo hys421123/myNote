@@ -1,0 +1,31 @@
+前者org.json;后者net.sf.json
+
+1.包名不同
+json.jar和json-lib.jar,其中后者还依赖ezmorph.jar,commons-lang.jar； commons-beanutils.jar；commons-collections.jar；commons-logging.jar;这 些jar包。ezmorph.jar最好用1.0.6版本
+
+2.JSON-lib框架，转换JSON、XML不再困难
+
+Json-lib 是一个 Java 类库（官网：http://json-lib.sourceforge.net/）可以实现如下功能：
+
+转换 javabeans, maps, collections, java arrays 和 XML 成为 json 格式数据
+转换 json 格式数据成为 javabeans 对象
+Json-lib 需要的 jar 包
+
+commons-beanutils-1.8.3.jar
+commons-collections-3.2.1.jar
+commons-lang-2.6.jar
+commons-logging-1.1.1.jar
+ezmorph-1.0.6.jar
+json-lib-2.4-jdk15.jar；；；；；
+而json.jar只是实现基本的提取json数据的功能
+
+3.两者差别
+创建对象不同:
+前者org.json  JSONObject json = new JSONObject(str);
+后者net.sf.json   JSONObject json = JSONObject.fromObje。其没有new JSONObject(String)的构造方法。
+
+获取对象：
+JSONObject.getXXX()；方法获取
+
+net.sf.json.JSONObject： 没有严格要求获取字段的类型跟getXXX()的类型一样
+org.json.JSONObject：获取的字段类型必须跟getXXX()的类型一样

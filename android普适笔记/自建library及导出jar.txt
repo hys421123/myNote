@@ -1,0 +1,1 @@
+自建library时在创建Android工程时就要勾选library，  在把library导出成jar时，必须去掉manifest的勾选。

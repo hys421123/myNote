@@ -1,0 +1,14 @@
+1.在已有的项目中新建Module->library
+
+2.model命名，Application name:项目名
+Module name: ***-library
+
+3.删除main文件夹下所有文件,将要导入的第三方库的main文件夹中文件
+全部复制粘贴进去。
+
+4.给项目添加依赖关系即可。
+
+
+方法二：复制粘贴lib文件夹到项目中，
+在项目的settings.gradle中添加  ,':androidlib',
+然后设置app关联lib 库。

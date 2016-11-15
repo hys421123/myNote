@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义view MyPubItem-->
+    <declare-styleable name="MyPubItem">
+        <attr name="myPubTitle" format="string"/>
+        <attr name="myPubTitleTextSize" format="dimension"/>
+        <attr name="myPubTitleTextColor" format="color"/>
+
+        <attr name="leftIcon" format="reference"/>
+        <attr name="rightIcon" format="reference"/>
+        <attr name="rightIconVisibility" format="boolean"/>
+
+        <attr name="pubRightIconClickable" format="boolean"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,1 @@
+其中Parcelable是Android特有的功能，效率要比实现Serializable接口高。实现Serializable接口非常简单，声明一下就可以了。而实现Parcelable虽然稍微复杂一些，但效率高，既然是Android特有用来做序列化使用的，那我们就推荐用这种方法。

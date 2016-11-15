@@ -1,0 +1,3 @@
+1、知乎  http://www.zhihu.com/question/39492234
+2、CSDN  可使用PublishSubject处理  http://blog.csdn.net/kongbaidepao/article/details/51240456
+3、Google提问  RxJava怎样封装传统callback形式的方法

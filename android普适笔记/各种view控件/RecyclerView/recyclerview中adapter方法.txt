@@ -1,0 +1,14 @@
+1. notifyDataSetChanged();全部数据更新
+
+dataList.add(Obj);//List<Obj>
+mAdapter.notifyDataSetChanged();
+数据更新跟 dataList息息相关
+
+2.notifyItemInserted(int position);插入数据
+	int mPosition=dataList.size()-1;
+	dataList.add(mPosition,Obj);//必须将修改数据集合放在前面
+	mAdapter.notifyItemInserted(mPosition);//在最后一行插入数据
+
+3.notifyItemChanged(int pos)更改数据
+	dataList.get(0).setCommentUserName("hhhyy");
+        mAdapter.notifyItemChanged(0);

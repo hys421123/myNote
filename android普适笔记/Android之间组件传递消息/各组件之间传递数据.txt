@@ -1,0 +1,5 @@
+ 1.Android中两个Activity之间数据传递及返回
+http://blog.csdn.net/cndrip/article/details/7191381
+
+2. intent.putExtra("claimItem", claimItem);
+传递对象，对象要继承Serializable类

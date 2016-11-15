@@ -1,0 +1,5 @@
+   <View 
+        android:layout_height="fill_parent"
+        android:layout_width="1dp"
+        android:background="@android:color/background_dark"
+        />

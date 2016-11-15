@@ -1,0 +1,25 @@
+1.哪三大图片加载框架？
+        1)    Picasso
+        2)    Glide
+        3)    Fresco
+
+2.介绍:
+    Picasso ：  和Square的网络库一起能发挥最大作用，因为Picasso可以选择将网络请求的缓存部分交给了okhttp实现。
+    
+    Glide：     模仿了Picasso的API，而且在他的基础上加了很多的扩展(比如gif等支持)，Glide默认的Bitmap格式是RGB_565，比    Picasso默认的ARGB_8888格式的内存开销要小一半；Picasso缓存的是全尺寸的(只缓存一种)，而Glide缓存的是跟ImageView尺寸相同的(即56*56和128*128是两个缓存) 。
+
+    FB的图片加载框架Fresco：    最大的优势在于5.0以下(最低2.3)的bitmap加载。在5.0以下系统，Fresco将图片放到一个特别的内存区域(Ashmem区)。当然，在图片不显示的时候，占用的内存会自动被释放。这会使得APP更加流畅，减少因图片内存占用而引发的OOM。为什么说是5.0以下，因为在5.0以后系统默认就是存储在Ashmem区了。
+
+
+3.Picasso与Glide
+Picasso.with(context)  
+    .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg") 
+    .into(ivImg);  
+
+Glide.with(context)  
+    .load("http://inthecheesefactory.com/uploads/source/glidepicasso/cover.jpg") 
+    .into(ivImg); 
+
+虽然两者看起来一样，但是Glide更易用，因为Glide的with方法不光接受Context，还接受Activity 和 Fragment，Context会自动的从他们获取。
+
+Picasso内存开销更大，但图片质量要好些。 Glide加载图片更快!!

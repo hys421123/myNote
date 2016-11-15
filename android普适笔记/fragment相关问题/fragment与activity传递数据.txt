@@ -1,0 +1,8 @@
+mainActivity中，
+fragment1 = new MyFragment1();
+        Bundle data = new Bundle();
+        data.putString("TEXT", "这是Activiy通过Bundle传递过来的值");
+        fragment1.setArguments(data);//通过Bundle向Activity中传递值
+
+Fragment中，
+  Bundle data = getArguments();//获得从activity中传递过来的值

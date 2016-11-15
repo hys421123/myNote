@@ -1,0 +1,2 @@
+根据recyclerview自己照着写的linearlayout的view;
+然后添加了拖拽功能，和侧滑删除功能。

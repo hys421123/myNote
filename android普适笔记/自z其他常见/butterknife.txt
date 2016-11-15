@@ -1,0 +1,16 @@
+1.library中下载butterknife库文件
+
+2.打开project下的“build.gradle”，然后在"dependencies"下增加
+“classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'”，
+
+3.打开app文件夹下的“build.gradle”,
+添加“apply plugin: 'android-apt'”，（在最上面添加）
+“apt 'com.jakewharton:butterknife-compiler:8.1.0'”（在dependencies 里面添加)
+
+4.关于自动生成generate butterknife插件，
+进入设置中，plungins里面，搜索butternife,弹出butternife zelezny,添加这个插件
+重启AS即可。
+
+注意事项：
+1.  ButterKnife.bind(this);要写在setContentView正后面，再才处理其他事件,这个时候控件才被绑定。
+2.butter.bind估计要在BaseAct里面填写才行

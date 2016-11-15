@@ -1,0 +1,21 @@
+添加数据:
+1.下载SDK
+2.复制粘贴相关权限
+3.在MyApplication 的onCreate()中初始化Bmob.initialize(getApplicationContext(), "your application Id");
+在跳转页面，进入设置/应用密钥，点击复制，即可得到Application ID
+4. DishBean extends BmobObject将自定义类继承BmobObject类
+5.dishBean.save(MainActivity.this, new SaveListener() {....});
+
+获取数据:
+BmobQuery<DishBean> query=new BmobQuery<DishBean>();
+	query.addWhereEqualTo("title", dishName);
+	query.findObjects(this, new FindListener<DishBean>() {
+......});
+
+
+
+Bmob.initialize异常，
+需添加compile 'cn.bmob.android:bmob-sdk:3.5.0'
+和    maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+见 Bmob介绍首页。
+跟项目命名的MyApplicationID 没有太大关系，就是说Bmob命名不用一定要写当前项目名。

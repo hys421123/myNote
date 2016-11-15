@@ -1,0 +1,8 @@
+解决办法，在C:\Program Files\Java\jdk1.8.0_51\bin目录下，有keytool.exe,
+在命令行cmd中进入，此目录，
+重新创建密钥
+keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -validity 10000
+显示成功创建密钥后，输入
+keytool -list -keystore debug.keystore
+显示密钥
+F3:A8:7B:21:26:C1:19:26:64:5C:C2:8A:83:C6:8D:16:8A:BB:EC:B5

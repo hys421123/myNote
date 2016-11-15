@@ -1,0 +1,79 @@
+方法一：
+彭进，
+在bindview里面完成点击注册事件，
+
+  public void onBindViewHolder(final TakeOutViewHolder holder, final int position) {
+
+        Mission mission=new Mission();
+        mission=dataList.get(position);
+
+   //TODO 设置图像点击事件
+        holder.round_head.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("Test","clicked"+position);
+
+                Intent intent = new Intent(context, PersonalHomePageActivity.class);
+                intent.putExtra("fromTakeOutMissionAdapterTV",dataList.get(position));
+                context.startActivity(intent);
+            }
+        });
+
+}
+
+方法二：
+hys
+在ViewHolder里面实现点击注册事件，
+     public TendcyViewHolder(View v) {
+	.....
+    	    ll_topview.setOnClickListener(this);
+            ll_like.setOnClickListener(this);
+            ll_comment.setOnClickListener(this);
+
+}
+
+ @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.ll_topview:
+//                    MyLog.d("topview click");
+                    if(itemClickListener!=null){
+//                        MyLog.d("topview click not null");
+                        itemClickListener.onItemClick(view,(TendItems)view.getTag());
+                    }
+                    break;
+....
+}
+
+在主事件中，填写真正的点击事件
+    @Override
+    public void onItemClick(View v, TendItems tendTag) {
+        Intent intent = new Intent(TendencyActivity.this, TendDetailsActivity.class);
+        intent.putExtra("TendItems", tendTag);
+        startActivityForResult(intent, REQUESTCODE_TENDETAILS);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
