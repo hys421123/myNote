@@ -22,7 +22,7 @@ watch 观察，  那么以后只要这个项目有任何更新，你都会第一
 1.<font color="red">先要在github上创建个人仓库</font><br>
 2.然后在客户端上<font color="red">clone</font>刚创建的仓库到本地<br>
 3.接着打开clone到本地的文件夹 将需要上传的项目添加进去这里以FirstRespository文件夹为例，里面放你想要上传的项目<br>
-4.添加之后回到github客户端,<font color="red">先要commit</font>，然后点击右上角的sync按钮同步提交即可。
+4.添加之后回到github客户端,<font color="red"><b>先要commit(只有在changes变化完之后才能sync)</b></font>，然后点击右上角的sync按钮同步提交即可。  <font color="blue">注意，有的commit，还要先去掉.git文件夹,是任何文件中都不能有这个!!才能commit。</font>
 
 ###4.AS提交代码<br>
 <a href="http://www.cnblogs.com/shiwei-bai/archive/2015/11/24/4991132.html"> 整个过程的链接</a><br>
@@ -34,6 +34,7 @@ watch 观察，  那么以后只要这个项目有任何更新，你都会第一
 3. AndroidStudio中<font color="red">从云端导入项目 </font> setting-> Version Control-> GitHub-> 登录账户即可
 然后，File->New-> Projects from Version Control-> GitHub-> 
 Clone Repository-> 选择你需要的GitHub仓库工程-> Test Successful之后，点击Clone即可。
+<font color="red"> 可能 AS中会显示unregistered vcs root detected,add root即可。</font>
 4. 把云端代码向as中更新，  VCS-> Git-> Pull
 5. 将as更新的代码向 云端提交   Git->Push
 
