@@ -18,6 +18,19 @@ watch 观察，  那么以后只要这个项目有任何更新，你都会第一
 ###3.关于GitHub客户端操作
 向 GitHub提交项目<br>
 <a href="http://www.cocoachina.com/ios/20160212/15024.html">链接</a><br>
+><font color="red">**首先要通过设置ssh key连接GitHub和本地计算机**</font><br>
+><b>设置ssh:</b> <a href="http://stormzhang.com/github/2016/06/04/learn-github-from-zero4/"> 设置详情</a><br>
+>1. 打开git bash;<br>
+>2.输入ssh，若有提示，说明本机已经安装ssh;<br>
+>3.输入 ssh-keygen -t rsa 生成两个文件id_rsa和id_rsa.pub;<br>
+>4.复制id_rsa.pub的内容到GitHub上的ssh key中；<br>
+>5.输入 ssh -T git@github.com 进行测试, 若出现successfully,则添加成功。<br><br>
+><b>出现问题的解决:</b> <a href="http://mqing720.blog.163.com/blog/static/2822000020152157483265/"> 问题解决</a><br>
+>我的问题，运用shh -T -v git@github.com查看具体出错信息，发现缺少github_rsa.pub文件。再看相关文件夹，发现文件又补上了。   
+>再次运行ssh -T git@github.com即可成功。
+
+
+
 提交更新，直接在本地仓库的项目中修改代码即可。<br>
 1.<font color="red">先要在github上创建个人仓库</font><br>
 2.然后在客户端上<font color="red">clone</font>刚创建的仓库到本地<br>
