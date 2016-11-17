@@ -1,0 +1,8 @@
+cmd-> cd .android  ->调试版本使用 debug.keystore，命令为：keytool -list -v -keystore debug.keystore;
+ 发布版本使用 apk 对应的 keystore，命令为：keytool -list -v -keystore apk 的 kenstore。
+链接：http://lbs.amap.com/api/android-location-sdk/guide/creat-project/get-key/#sha1
+
+
+若keytool 命令不存在，需要设置环境变量，在 .android  下，直接输入keytool直至显示命令为止；然后开始上面的做法。
+解决方法二，链接：http://blog.csdn.net/herogui/article/details/50623282
+把  C:\Users\****\.Android 目录下的 debug.keystore  拷贝到  K:\Program Files\jdk\bin下即可
