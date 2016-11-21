@@ -1,0 +1,4 @@
+ Android Studio使用时源码到处报红色警告，运行时又没错
+
+；实际上就是要重启 gradle
+http://blog.csdn.net/liupengcheng201/article/details/51498389
