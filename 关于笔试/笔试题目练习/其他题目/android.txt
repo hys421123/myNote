@@ -1,0 +1,2 @@
+1.android系统架构
+Linux内核，硬件抽象层，Libraries,Framework,Application.

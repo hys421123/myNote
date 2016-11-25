@@ -1,0 +1,9 @@
+activity:
+oncreate,onstart,onresume,onpause.£¬onstop,onrestart,ondestroy7¸ö
+
+
+
+fragment:
+onattach,oncreate,oncreateview,onactivitycreatead/
+onstart,onresume,onpause,onstop/
+ondestroyview,ondestroy,ondetach

@@ -1,0 +1,4 @@
+1,多窗口多任务处理，VR平台 Daydream支持。
+
+2.将原来的Messenger、Hangouts替换为 Allo、Duo
+Allo类似微信，服务于语音消息，

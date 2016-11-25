@@ -1,0 +1,36 @@
+单例模式有三种，懒汉式单例、饿汉式、登记式。
+
+1.懒汉式
+//懒汉式单例类.在第一次调用的时候实例化自己   
+public class Singleton {  
+    private Singleton() {}  
+    private static Singleton single=null;  
+    //静态工厂方法   
+    public static Singleton getInstance() {  
+         if (single == null) {    
+             single = new Singleton();  
+         }    
+        return single;  
+    }  
+}  
+
+但是以上懒汉式单例的实现没有考虑线程安全问题，它是线程不安全的，并发环境下很可能出现多个Singleton实
+
+
+2,饿汉模式
+//饿汉式单例类.在类初始化时，已经自行实例化   
+public class Singleton1 {  
+    private Singleton1() {}  
+    private static final Singleton1 single = new Singleton1();  
+    //静态工厂方法   
+    public static Singleton1 getInstance() {  
+        return single;  
+    }  
+}  
+饿汉式在类创建的同时就已经创建好一个静态的对象供系统使用，以后不再改变，所以天生是线程安全的。
+
+懒汉比较懒，只有当调用getInstance时，才回去初始化单例。
+
+懒汉模式，在整个应用的生命周期只有一部分时间在占用资源。
+
+饿汉模式，从加载到应用结束会一直占用资源。

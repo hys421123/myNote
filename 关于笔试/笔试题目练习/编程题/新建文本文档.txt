@@ -1,0 +1,25 @@
+1.字符串最后一个单词长度，
+
+Scanner s=new Scanner(System.in);
+//s.hasNext()是否存在下一个
+while(s.hasNextLine()){//是否存在下一行
+	//s.next()只是输出一个字符串，而s.nextLine()一整行所有字符串。
+	String[] p=s.nextLine().split(" ");
+	System.out.print(p[p.length-1].length());
+}
+
+解析：用数组吸收输入字符串，分割符split编程字符串数组，抓取最后一个输出。
+熟练Scanner用法
+
+2.当n=3时，输出如下
+1*2*3*10*11*12
+--4*5*8*9
+---6*7
+当n=4时，输出如下
+1*2*3*4*17*18*19*20
+--5*6*7*14*15*16
+---8*9*12*13
+----10*11
+以此类推，当输入n（n<100）时，输出类似数字倒三角
+
+test2_java_AutoConversation

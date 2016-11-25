@@ -1,0 +1,5 @@
+问题：list.contains(user)时总是返回false
+
+文章：http://blog.csdn.net/witsmakemen/article/details/7323604
+
+改进版： http://blog.csdn.net/newnewfeng/article/details/50786837
