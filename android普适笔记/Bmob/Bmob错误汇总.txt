@@ -1,0 +1,10 @@
+ 1.  Invalid index 0, size is 0
+
+ if(concernBean.getFansList()==null||concernBean.getFansList().size()==0)
+                        fansNum=0;
+                    else {
+                        List<ConcernFans> fansList = concernBean.getFansList();
+                        fansNum = fansList.size();
+                        String info=  fansList.get(0).getInfo();
+
+分析：size 为0时，不能有fansList.get(0); 因为这其中本来就没有数据啊！！
