@@ -1,0 +1,5 @@
+1. 有一个library ，里面放的 各种activity
+有基类activity， BGAPPToolbarActivity -->BaseActivity
+
+
+newIntent(..); 里面装的 是各种要传递的 参数。
