@@ -1,0 +1,14 @@
+menu 修改字体，只能在 toolbar里设置 字体 Theme, 如此才能真正生效。
+<toolbar
+	...
+   app:theme="@style/ToolbarTheme"
+   />
+
+在 styles.xml中，
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/white</item> <!--  敲定颜色-->
+        <item name="android:textSize">18sp</item> <!--  搞掂字体大小-->
+    </style>
+
+网上的解决方案，貌似都没有效果啊！！（网上说的应给是actionBar的字体设置）跟toolbar有所不同。
+http://www.crifan.com/android_menu_text_size_too_small/

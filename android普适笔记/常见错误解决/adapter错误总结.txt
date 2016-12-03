@@ -1,0 +1,5 @@
+最好不要设置全局 变量，
+
+    private  boolean isConcerned3;//判断是否 被 本用户关注的 状态
+
+跟点击事件在一起时， 容易  造成 前一次的状态赋值到 isConcerned3上了。
