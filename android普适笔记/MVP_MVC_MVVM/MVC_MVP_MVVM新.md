@@ -2,4 +2,8 @@
 
 mvc详解，<a href="http://www.2cto.com/kf/201506/405766.html">文章链接 </a>
 
+model、view、controller
+<img src="mvc.png">  
+视图view；各种java bean，还有一些具体**业务逻辑**对应于model层；至于controller层嘛，当然就是各种activity咯。<br>
+
 三者比较2，客户端软件架构演变具体过程 <a href="http://www.cnblogs.com/tiantianbyconan/p/5036289.html"> 链接</a>
