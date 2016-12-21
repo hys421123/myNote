@@ -104,3 +104,8 @@
 <font face="楷体">我是华文彩云</font><br>
 <font color=#0099ff size=5 face="黑体">color=#0099ff size=5 face="黑体"</font><br>
 <font color=red size=5 >color=gray</font>
+
+###2.特殊符号
+&nbsp;  空格  <br>
+&lt;  
+&gt;  注意：不要忘记 ; (分号)
