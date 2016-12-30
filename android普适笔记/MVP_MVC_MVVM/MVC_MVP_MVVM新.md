@@ -7,3 +7,17 @@ model、view、controller
 视图view；各种java bean，还有一些具体**业务逻辑**对应于model层；至于controller层嘛，当然就是各种activity咯。<br>
 
 三者比较2，客户端软件架构演变具体过程 <a href="http://www.cnblogs.com/tiantianbyconan/p/5036289.html"> 链接</a>
+
+
+mvp架构
+-----
+<a href="http://blog.csdn.net/vector_yi/article/details/24719873">相关文章</a> 
+<img src="mvp.png">  
+View --> UI
+IView(view interface) --> view 通过IView 与presenter 交互，降低耦合。
+model --> 负责检索、存储、操作数据
+presenter --> view/model 中间纽带
+
+##### mvc -->mvp
+将<font color="red">复杂</font>逻辑处理转移到 presenter中, 
+而activity负责mvp中的view，UI initiate，简单逻辑UI与presenter关联。
