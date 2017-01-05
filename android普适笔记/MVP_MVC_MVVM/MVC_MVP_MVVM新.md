@@ -18,6 +18,18 @@ IView(view interface) --> view 通过IView 与presenter 交互，降低耦合。
 model --> 负责检索、存储、操作数据
 presenter --> view/model 中间纽带
 
-##### mvc -->mvp
-将<font color="red">复杂</font>逻辑处理转移到 presenter中, 
-而activity负责mvp中的view，UI initiate，简单逻辑UI与presenter关联。
+#### mvc -->mvp
+model --> ；
+presenter中 --> 将<font color="red">复杂</font>逻辑处理转移到； 
+view --> activity负责mvp中的view：它负责UI initiate，简单逻辑UI，presenter关联。
+
+
+#### mvp实例
+<a href="https://zhuanlan.zhihu.com/p/20312610">mvp例1</a>
+<a href="https://zhuanlan.zhihu.com/p/21771642">mvp例2</a>
+<a href="http://www.jianshu.com/p/14283d8d3a60">Google_mvp</a>
+
+mvp改进版T-MVP
+----
+相关文章：
+<a href="http://www.jianshu.com/p/b49958e1889d">T-mvp简书</a> 
